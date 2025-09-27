@@ -4,7 +4,18 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <p>&copy; {new Date().getFullYear()} Mármoles y Granitos. Todos los derechos reservados.</p>
+                <p>&copy; Copyright {new Date().getFullYear()} D´Marmol. Derechos Reservados</p>
+                <p>
+                    Dev by:{" "}
+                    <a
+                        href="https://github.com/Lucasz-py"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="dev-link"
+                    >
+                        Lucasz-py
+                    </a>
+                </p>
             </div>
         </footer>
     );

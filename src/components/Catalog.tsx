@@ -1,36 +1,38 @@
 import './Catalog.css';
 
+// Importar imágenes locales
+import gNegroBoreal from '../assets/images/negro-boreal.jpg';
+import gGrisPerla from '../assets/images/gris-perla.jpg';
+import mBoticcino from '../assets/images/boticcino.jpg';
+import mNegroMarquina from '../assets/images/negro-marquina.jpg';
+import mBlancoTurco from '../assets/images/blanco-turco.jpg';
+import gGrisMara from '../assets/images/gris-mara.jpg';
+
 const Catalog = () => {
     const materials = [
         {
-            name: "Mármol Blanco Turco",
-            image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            description: "Mármol de color blanco con vetas grises, ideal para interiores."
+            name: "GRANITO NEGRO BOREAL",
+            image: gNegroBoreal,
         },
         {
-            name: "Mármol Negro Marquina",
-            image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            description: "Mármol negro intenso con vetas blancas, muy elegante y resistente."
+            name: "GRANITO GRIS PERLA",
+            image: gGrisPerla,
         },
         {
-            name: "Granito Gris Perla",
-            image: "https://images.unsplash.com/photo-1583513364301-f9339bc6122c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            description: "Granito de color gris con pequeñas motas perladas, muy duradero."
+            name: "MARMOL BOTICCINO",
+            image: mBoticcino,
         },
         {
-            name: "Mármol Travertino",
-            image: "https://images.unsplash.com/photo-1611270629569-8b357cb3082c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            description: "Mármol beige con poros naturales, perfecto para baños y fachadas."
+            name: "MARMOL NEGRO MARQUINA",
+            image: mNegroMarquina,
         },
         {
-            name: "Granito Negro Absoluto",
-            image: "https://images.unsplash.com/photo-1596727008706-33b600a531f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            description: "Granito negro uniforme, muy resistente a manchas y arañazos."
+            name: "MARMOL BLANCO TURCO",
+            image: mBlancoTurco,
         },
         {
-            name: "Cuarzo Blanco",
-            image: "https://images.unsplash.com/photo-1598301257982-0cf01499abb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-            description: "Material sintético de gran resistencia, no poroso y fácil mantenimiento."
+            name: "GRANITO GRIS MARA",
+            image: gGrisMara,
         }
     ];
 
@@ -47,7 +49,6 @@ const Catalog = () => {
                             </div>
                             <div className="material-info">
                                 <h3>{material.name}</h3>
-                                <p>{material.description}</p>
                             </div>
                         </div>
                     ))}

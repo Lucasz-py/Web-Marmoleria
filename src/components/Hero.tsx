@@ -3,12 +3,26 @@ import BlurText from './BlurText';
 
 interface HeroProps {
     key?: number;
+    onNavigateToCatalog?: () => void; // Nueva prop
+    onNavigateToContact?: () => void;
 }
 
-const Hero = ({ key }: HeroProps) => {
+const Hero = ({ key, onNavigateToCatalog, onNavigateToContact }: HeroProps) => {
     const handleAnimationComplete = () => {
         console.log('Hero animation completed!');
     };
+
+    const handleCatalogClick = () => {
+        if (onNavigateToCatalog) {
+            onNavigateToCatalog();
+        }
+    };
+
+    const handleContactClick = () => {
+        if (onNavigateToContact) {
+            onNavigateToContact();
+        }
+    }
 
     return (
         <section id="inicio" className="hero">
@@ -35,7 +49,14 @@ const Hero = ({ key }: HeroProps) => {
                     />
                 </div>
                 <p>NACIONALES E IMPORTADOS</p>
-                <button className="cta-button">Ver Catálogo</button>
+                <div className="hero-buttons">
+                    <button className="cta-button" onClick={handleCatalogClick}>
+                        Ver Catálogo
+                    </button>
+                    <button className="contacto-button" onClick={handleContactClick}>
+                        Contáctenos
+                    </button>
+                </div>
             </div>
         </section>
     );

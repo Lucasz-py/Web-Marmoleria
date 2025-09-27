@@ -33,6 +33,7 @@
     font-family: "BIZ UDPMincho", serif;
     font-weight: 700;
     font-style: normal;
+    -webkit-text-stroke: 1px black;
     /* Asegurar que no haya fondo */
     background-color: transparent;
 }
