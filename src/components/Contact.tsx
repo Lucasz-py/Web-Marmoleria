@@ -2,7 +2,7 @@ import './Contact.css';
 
 const Contact = () => {
     const handleMapClick = () => {
-        window.open('https://goo.gl/maps/example', '_blank');
+        window.open('https://maps.app.goo.gl/39esLqvinqppviAt9', '_blank');
     };
 
     return (
@@ -22,11 +22,11 @@ const Contact = () => {
                         </div>
                         <div className="contact-item">
                             <strong>Dirección:</strong>
-                            <span>Av. Principal #123, Ciudad, País</span>
+                            <span>Av. Armenia 3880, Corrientes</span>
                         </div>
                         <div className="contact-item">
                             <strong>Horario:</strong>
-                            <span>Lunes a Viernes: 9:00 - 18:00<br />Sábados: 9:00 - 13:00</span>
+                            <span>Lunes a Viernes: Mañana: 9:00 - 12:30   Tarde: 16:30 - 20:00 <br />Sábados: 9:00 - 12:30</span>
                         </div>
                     </div>
                     <div className="map-container" onClick={handleMapClick}>
